@@ -1,10 +1,10 @@
-import React from 'react';
-import { useOutletContext } from 'react-router';
-import { PieChart, Pie, Cell, Tooltip } from 'recharts';
+import React from 'react'
+import { useOutletContext } from 'react-router'
+import { PieChart, Pie, Cell, Tooltip } from 'recharts'
 
 const Stats = () => {
 
-    const { timeline } = useOutletContext();
+    const { timeline } = useOutletContext()
 
     const data = [
         { name: 'Call', value: timeline.filter(t => t.type === 'Call').length },
@@ -12,7 +12,7 @@ const Stats = () => {
         { name: 'Video', value: timeline.filter(t => t.type === 'Video').length },
     ];
 
-    const COLORS = ['#22c55e', '#3b82f6', '#f59e0b'];
+    const COLORS = ['#22c55e', '#3b82f6', '#f59e0b']
 
     return (
         <div className='text-center py-10'>
@@ -40,4 +40,4 @@ const Stats = () => {
     );
 };
 
-export default Stats;
+export default Stats
