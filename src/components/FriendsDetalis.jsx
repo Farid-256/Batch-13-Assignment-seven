@@ -140,4 +140,4 @@ const FriendsDetalis = () => {
     );
 };
 
-export default FriendsDetalis;
+export default FriendsDetalis

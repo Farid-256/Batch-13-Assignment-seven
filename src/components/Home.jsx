@@ -1,6 +1,6 @@
-import React, { Suspense } from 'react';
-import FriendsData from './FriendsData';
-import Bannar from './Bannar';
+import React, { Suspense } from 'react'
+import FriendsData from './FriendsData'
+import Bannar from './Bannar'
 
 
 
@@ -25,4 +25,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Home
