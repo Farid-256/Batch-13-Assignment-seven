@@ -9,7 +9,7 @@ const FriendsCard = ({ friend }) => {
         'Almost due': 'bg-yellow-400 text-black',
     };
 
-    const statusColor = statusColors[friend.status] || 'bg-gray-400 text-white';
+    const statusColor = statusColors[friend.status] || 'bg-gray-400 text-white'
 
     return (
         <Link to={`/friendsDetails/${friend.id}`}>
@@ -52,4 +52,4 @@ const FriendsCard = ({ friend }) => {
     );
 };
 
-export default FriendsCard;
+export default FriendsCard
