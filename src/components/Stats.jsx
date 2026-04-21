@@ -13,7 +13,6 @@ const Stats = () => {
     ];
 
     const COLORS = ['#22c55e', '#3b82f6', '#f59e0b']
-    
 
     return (
         <div className='text-center py-10'>
