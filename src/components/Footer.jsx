@@ -7,7 +7,7 @@ import footerLogo from '../assets/logo-xl.png'
 const Footer = () => {
     return (
         <footer className='bg-green-900 py-10 px-5 md:px-20'>
-            {/* Top Section */}
+   
             <div className='flex flex-col justify-center items-center space-y-5 text-center'>
                 <img src={footerLogo} alt="" />
                 <p className='text-gray-400 max-w-md'>
@@ -22,11 +22,10 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Separator line */}
+ 
             <div className="border-t border-green-800 my-8"></div>
 
-            {/* Bottom Section */}
-            {/* মোবাইল হলে flex-col, ডেস্কটপ হলে flex-row */}
+
             <div className='flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-4'>
                 <p className='text-center'>© 2026 KeenKeeper. All rights reserved.</p>
 
