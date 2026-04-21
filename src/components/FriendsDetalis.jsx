@@ -3,8 +3,8 @@ import { useLoaderData, useParams } from 'react-router'
 import phone from '../assets/call.png'
 import text from '../assets/text.png'
 import video from '../assets/video.png'
-import { ToastContainer, toast } from 'react-toastify';
-import { useOutletContext } from 'react-router';
+import { ToastContainer, toast } from 'react-toastify'
+import { useOutletContext } from 'react-router'
 
 const FriendsDetalis = () => {
     const { id } = useParams()
@@ -12,7 +12,7 @@ const FriendsDetalis = () => {
     const friendsData = useLoaderData()
     const friend = friendsData.find(f => f.id === friendsId)
 
-    const { timeline, setTimeline } = useOutletContext();
+    const { timeline, setTimeline } = useOutletContext()
 
     const addToTimeline = (type) => {
         const newEntry = {
@@ -22,9 +22,9 @@ const FriendsDetalis = () => {
             title: `${type} with ${friend.name}`
         };
 
-        setTimeline([...timeline, newEntry]);
+        setTimeline([...timeline, newEntry])
 
-        toast.success(`${type} added to timeline`);
+        toast.success(`${type} added to timeline`)
     };
 
 
@@ -39,7 +39,7 @@ const FriendsDetalis = () => {
         <div className="px-50 mx-auto py-20 bg-gray-50">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-                {/* Left Column - Profile Info */}
+  
                 <div className="bg-white rounded-3xl shadow-sm p-8 border border-amber-300 space-y-5">
                     <div className="flex justify-center mb-8">
                         <img
@@ -53,22 +53,20 @@ const FriendsDetalis = () => {
                         <h1 className="text-4xl font-bold text-gray-900 mb-2">{friend.name}</h1>
                         <p className="text-gray-500 mb-6">{friend.email}</p>
 
-                        {/* Status Badge */}
+
                         <div className={`inline-block px-6 py-2 rounded-full text-sm font-semibold mb-8 ${statusColor}`}>
                             {friend.status === 'overdue' ? 'Overdue' : 'On Track'}
                         </div>
 
-                        {/* Bio */}
                         <div className="bg-gray-50 rounded-2xl p-6 mb-8">
                             <p className="text-gray-700 italic">"{friend.bio}"</p>
                         </div>
 
-                        {/* Preferred Email */}
                         <p className="text-sm text-gray-500">
                             Preferred email: <span className="font-medium text-gray-800">{friend.email}</span>
                         </p>
                     </div>
-                    {/* Action button */}
+
                     <div className="space-y-3">
                         <button className="w-full py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-2xl transition flex items-center justify-center gap-2">
                             ⏰ Snooze 2 Weeks
@@ -82,10 +80,10 @@ const FriendsDetalis = () => {
                     </div>
                 </div>
 
-                {/* Right Column - Details */}
+
                 <div className="space-y-6">
 
-                    {/* Stats Cards */}
+
                     <div className="grid grid-cols-3 gap-4">
                         <div className="bg-white p-6 rounded-2xl shadow-sm text-center">
                             <h3 className="text-2xl font-bold text-gray-800">{friend.days_since_contact}</h3>
@@ -103,7 +101,7 @@ const FriendsDetalis = () => {
                         </div>
                     </div>
 
-                    {/* Relationship Goal */}
+  
                     <div className="bg-white rounded-3xl p-8 shadow-sm">
                         <div className="flex justify-between items-center mb-6">
                             <h3 className="text-xl font-semibold">Relationship Goal</h3>
@@ -114,7 +112,7 @@ const FriendsDetalis = () => {
                         </p>
                     </div>
 
-                    {/* Quick Check-In */}
+
                     <div className="bg-white rounded-3xl p-8 shadow-sm">
                         <h3 className="text-xl font-semibold mb-6">Quick Check-In</h3>
                         <div className="grid grid-cols-3 gap-4">

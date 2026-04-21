@@ -16,4 +16,4 @@ const FriendsData = ({ friendsPromise }) => {
     );
 };
 
-export default FriendsData;
+export default FriendsData
