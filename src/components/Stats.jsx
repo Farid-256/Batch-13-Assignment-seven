@@ -25,8 +25,7 @@ const Stats = () => {
                         cx="50%"
                         cy="50%"
                         outerRadius={100}
-                        dataKey="value"
-                    >
+                        dataKey="value">
                         {
                             data.map((entry, index) => (
                                 <Cell key={index} fill={COLORS[index]} />
